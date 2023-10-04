@@ -16,7 +16,7 @@ class Product{
         echo "Porduct Details: \n";
         echo "- ID: {$this->id} \n";
         echo "- Name: {$this->name} \n";
-        echo "- Price: \${$this->price} \n";
+        echo "- Price: \${$this->getFormattedPrice()} \n";
     }
 }
 $product = new Product(1, 'T-shirt', 19.99);
